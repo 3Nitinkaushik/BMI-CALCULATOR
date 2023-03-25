@@ -66,7 +66,7 @@ class _Inputpage extends State<Bodybmi> {
                       label: "MALE",
                       iconcontentcolours: malecolor),
                 ),
-                SizedBox(width: 20),
+                const SizedBox(width: 20),
                 roundrectanglebox(
                   function: () {
                     setState(() {
@@ -87,7 +87,7 @@ class _Inputpage extends State<Bodybmi> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           roundrectanglebox(
@@ -118,10 +118,10 @@ class _Inputpage extends State<Bodybmi> {
                   data: SliderTheme.of(context).copyWith(
                     inactiveTrackColor: Colors.white60,
                     activeTrackColor: Colors.white,
-                    thumbColor: Color(0xffeb1555),
-                    thumbShape: RoundSliderThumbShape(enabledThumbRadius: 16),
-                    overlayShape: RoundSliderOverlayShape(overlayRadius: 30),
-                    overlayColor: Color(0x29eb1555),
+                    thumbColor: const Color(0xffeb1555),
+                    thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 16),
+                    overlayShape: const RoundSliderOverlayShape(overlayRadius: 30),
+                    overlayColor: const Color(0x29eb1555),
                   ),
                   child: Slider(
                       value: height.toDouble(),
@@ -136,7 +136,7 @@ class _Inputpage extends State<Bodybmi> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Expanded(
@@ -184,7 +184,7 @@ class _Inputpage extends State<Bodybmi> {
                                     });
                                   },
                                   mathicon: FontAwesomeIcons.minus),
-                              SizedBox(
+                              const SizedBox(
                                 width: 10,
                               ),
                               roundbutton(
@@ -203,7 +203,7 @@ class _Inputpage extends State<Bodybmi> {
                     ],
                   ),
                 ),
-                SizedBox(width: 20),
+                const SizedBox(width: 20),
                 roundrectanglebox(
                     colour: KBoxcolor,
                     rectanglechild: Column(
@@ -245,7 +245,7 @@ class _Inputpage extends State<Bodybmi> {
                                       });
                                     },
                                     mathicon: FontAwesomeIcons.minus),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10,
                                 ),
                                 roundbutton(
@@ -267,7 +267,7 @@ class _Inputpage extends State<Bodybmi> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           GestureDetector(
@@ -288,7 +288,7 @@ class _Inputpage extends State<Bodybmi> {
             },
 
             child: Container(decoration: BoxDecoration(color: Colors.pink,borderRadius: BorderRadius.circular(8)),
-              padding: EdgeInsets.only(top: 20,bottom: 20),
+              padding: const EdgeInsets.only(top: 20,bottom: 20),
 
               alignment: Alignment.center,
               child: Text(

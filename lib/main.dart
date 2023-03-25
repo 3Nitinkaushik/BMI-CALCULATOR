@@ -3,11 +3,11 @@ import 'themestyle.dart';
 import 'inputpage.dart';
 
 void main() {
-  runApp(appbarmain());
+  runApp(const Appbarmain());
 }
 
-class appbarmain extends StatelessWidget {
-  const appbarmain({Key? key}) : super(key: key);
+class Appbarmain extends StatelessWidget {
+  const Appbarmain({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,14 +17,14 @@ class appbarmain extends StatelessWidget {
       home: Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
-          title: Center(
+          title: const Center(
             child: Text(
               "BMI CALCULATOR",
               style: TextStyle(color: Colors.white),
             ),
           ),
         ),
-        body: Bodybmi(),
+        body: const Bodybmi(),
       ),
     );
   }

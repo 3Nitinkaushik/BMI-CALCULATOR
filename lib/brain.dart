@@ -13,8 +13,7 @@ class Calculatorbmi {
     return _result.toStringAsFixed(1);
   }
 
-  getvalue() {print(height);
-    print(weight);
+  getvalue() {
     if (_result >= 25.00) {
       return "OVERWEIGHT";
     }
